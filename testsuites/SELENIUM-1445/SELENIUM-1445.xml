@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TestCase xmlns="https://www.steepgraph.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="https://www.steepgraph.com ../../resources/xsd/TestAutomationFramework.xsd">
+	
+	<Login password="$csv{password}" username="$csv{username}"/>
+	
+		<!-- Select Indented Table Row using criteria level -->
+	<!-- ClickGlobalActionsMenu commandLabel="Engineering|Part|Create Part"/>
+    <SwitchToSlideInWindow/>
+    <ClickElement locatorType="id" locatorExpression="AutoNameSeriesId"/>
+    <ClickElement locatorType="xpath" locatorExpression="//input[@name='autoNameCheck']"/>
+    <InputText locatorType="id" locatorExpression="VPMProductName1" input=" Assembly"/>
+    <SelectElement locatorType="id" locatorExpression="AutoNameSeriesId" input="B Series"/>
+    <InputText locatorType="id" locatorExpression="DescriptionId" input="Build SkateBoard from Assembly"/>
+    <SelectElement locatorType="id" locatorExpression="ReleaseProcessId" input="Production"/>
+    <ClickElement locatorType="id" locatorExpression="Weight"/>
+    <InputText locatorType="id" locatorExpression="Weight" input="500"/>
+    <ClickElement locatorType="xpath" locatorExpression="//button[@type='button']"/>  -->
+    
+    
+    <!-- CREATE EBOM  -->
+    <!--  <Wait time="5000"/>
+    <SwitchToDefaultContent/>
+    <ClickElement locatorType="xpath" locatorExpression="//img[@src='images/iconActionSmallReturnToFacets.png']"/>
+    <ClickElement locatorType="xpath" locatorExpression="//label[contains(text(),'Engineering BOM')]"/>
+    <SwitchToFrame name="content=>detailsDisplay=>portalDisplay=>ENCBOM"/>
+    <ClickElement locatorType="xpath" locatorExpression="//td[@id='displayModeMenu']//img[1]"/>
+    <ClickElement locatorType="xpath" locatorExpression="//label[contains(text(),'Table')]"/>
+    <ClickElement locatorType="xpath" locatorExpression="//div[@id='divToolbar']//div[1]//table[1]//tbody[1]//tr[1]//td[1]//img[@src='../common/images/I_CatalogAddPLMItemRef.png']"/>
+    <ClickElement locatorType="xpath" locatorExpression="//label[normalize-space()='Existing Part...']"/>
+    <SwitchToDefaultContent/>
+    <ClickElement locatorType="xpath" locatorExpression="//div[@id='table']//div[@class='wux-layouts-gridengine-poolcontainer-rel']//div[1]//div[1]//div[1]"/>
+    <ClickElement locatorType="xpath" locatorExpression="//button[@id='id_in_app_ok']"/>
+    <Wait time="5000"/>
+    <SwitchToDefaultContent/> -->
+   
+   <!--  <SwitchToFrame name="content=>detailsDisplay=>portalDisplay=>ENCBOM"/>
+     <optionalStart/> -->
+    <!--  because of error & warning the table got selected automatically  so here we pereform  SelectIndentedTableRow two times so that we can see the effect on UI-->
+    <SelectIndentedTableRow expand="false" id="row" criteria="level" isnew="4644646vfyfhg"/>
+
+	<!-- <optionalClose/>
+    <SwitchToDefaultContent/>  -->
+    <Wait time="5000"/>
+	
+
+ </TestCase>

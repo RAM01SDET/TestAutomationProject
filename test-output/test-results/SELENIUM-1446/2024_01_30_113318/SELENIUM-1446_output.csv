@@ -1,0 +1,2 @@
+"username","password","SelectRow","Execution Status","Execution Failure Reason(if any)","Notes(if any)"
+"3DEXP01","T0g3aShU6v47E1iaY3JEaw==","Name","FAIL","section attribute is not defined properly for SelectIndentedTableRow tag. Possible values are : table/freezepan.",""

@@ -1,0 +1,10 @@
+-verbose
+-dontnot
+-dontwarn
+-dontshrink
+-dontoptimize
+-keep public class * { public protected *;}
+-keep class myPackage.controllers.** { public protected *;}
+-keepattributes SourceFile,Signature,LineNumberTable,Exceptions, *Annotation*
+-keepparameternames
+-keepdirectories

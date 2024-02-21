@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TestCase xmlns="https://www.steepgraph.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="https://www.steepgraph.com .././../resources/xsd/TestAutomationFramework.xsd">
+ 
+ <!-- To verify OpenSearchResult tag should not work for with id, criteria, value -->
+<!--https://www.sgs22xfd06dev.com/3dspace  -->
+
+	<Login username="$csv{username}" password="$csv{password}" />  
+ 	<GlobalSearch id="PartName" type="All" searchtype="Search"/>
+ 	<OpenSearchResult id="Search_Object_Name1"  criteria="text" value="$csv{ObjectRevision}" column="title"  /> 
+ 	<Wait time="1000"/>
+ 	<Logout/>
+ 	<Assert condition="=" criteria="text"  mode="js"/>
+ 	<SelectColor color="" locatorType="id" locatorExpression="" />
+ 	<CheckElement locatorType="id" locatorExpression="" criteria="visible" />
+ 	
+
+ </TestCase>
+ 

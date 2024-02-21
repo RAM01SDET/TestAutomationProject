@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TestCase xmlns="https://www.steepgraph.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="https://www.steepgraph.com ../../resources/xsd/TestAutomationFramework.xsd">
+	
+	<Login password="$csv{password}" username="$csv{username}"/>
+	<ClickGlobalActionsMenu commandLabel="Project|Create Project|New"/>
+	<SwitchToSlideInWindow/>
+	<ClickElement locatorType="xpath" locatorExpression="//input[@name='autoNameCheck']"/>
+	<ClickElement locatorType="xpath" locatorExpression="//button[@type='button']"/>
+	<SwitchToParentWindow/>
+	<SwitchToDefaultContent/>
+	<ClickElement locatorType="xpath" locatorExpression="//label[normalize-space()='Schedule']"/>
+	<SwitchToFrame name="content"/>
+	<SwitchToFrame name="detailsDisplay"/>
+	<SwitchToFrame name="portalDisplay"/>
+	<SwitchToFrame name="PMCWBS"/>
+	<ClickElement locatorType="xpath" locatorExpression="//td[@id='displayModeMenu']//img[1]"/>
+	<ClickElement locatorType="xpath" locatorExpression="//label[contains(text(),'Table')]"/>
+	<ClickElement locatorType="xpath" locatorExpression="//img[@src='../common/images/iconActionEdit.png']"/>
+	<Wait time="3000"/>
+	
+	<SelectIndentedTableRow expand="false" id="row" criteria="level" selectcheckbox="aVH" /> 
+	
+	<Wait time="3000"/>
+ </TestCase>

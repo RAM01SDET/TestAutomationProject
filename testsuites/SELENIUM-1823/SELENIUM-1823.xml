@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TestCase xmlns="https://www.steepgraph.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="https://www.steepgraph.com .././../resources/xsd/TestAutomationFramework.xsd">
+	
+	<!--To verify tag should not work & throws proper error for invalid value for insideFreezePane  -->
+	<!--not showing any error for wrong value for  insideFreezePane in logs  -->
+	
+	<Login password="$csv{password}" username="$csv{username}"/>
+	<SetStartWindow/>
+	<ClickGlobalActionsMenu commandLabel="Project|Create Project|New"/>
+	<SwitchToSlideInWindow/>
+	<ClickElement locatorType="xpath" locatorExpression="//input[@name='autoNameCheck']"/>
+	<ClickElement locatorType="xpath" locatorExpression="//button[@type='button']"/>
+	<SwitchToParentWindow/>
+	<SwitchToDefaultContent/>
+	<ClickElement locatorType="xpath" locatorExpression="//label[normalize-space()='Schedule']"/>
+	<SwitchToFrame name="content"/>
+	<SwitchToFrame name="detailsDisplay"/>
+	<SwitchToFrame name="portalDisplay"/>
+	<SwitchToFrame name="PMCWBS"/>
+	<ClickElement locatorType="xpath" locatorExpression="//td[@id='displayModeMenu']//img[1]"/>
+	<ClickElement locatorType="xpath" locatorExpression="//label[contains(text(),'Table')]"/>
+	<ClickElement locatorType="xpath" locatorExpression="//img[@src='../common/images/iconActionEdit.png']"/>
+	<Wait time="3000"/>
+	<SelectIndentedTableRow expand="false" id="row" criteria="level" />
+	<optionalStart/>
+    <EditIndentedTableRow  id="SE Export Authorization Status" action="date" refid="row" insideFreezePane="valueverified" position="11"/>
+    <optionalClose/>
+	<EditIndentedTableRow  id="SE Export Authorization Status" action="date" refid="row" insideFreezePane="false" position="11"/>
+	<Wait time="3000"/>
+	<SwitchToStartWindow/>
+	<Logout/>
+
+ </TestCase>

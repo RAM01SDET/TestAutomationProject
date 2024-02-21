@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Suite: TestPlan, Test Case: SELENIUM-1998, Status: Pass]]>
+    </line>
+  </reporter-output>
+  <suite name="TestPlan" duration-ms="38127" started-at="2024-02-21T11:58:47 IST" finished-at="2024-02-21T11:59:25 IST">
+    <groups>
+    </groups>
+    <test name="SELENIUM-1998" duration-ms="38127" started-at="2024-02-21T11:58:47 IST" finished-at="2024-02-21T11:59:25 IST">
+      <class name="com.steepgraph.ta.framework.App">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.steepgraph.ta.framework.App@5066d65f]" name="beforeTest" is-config="true" duration-ms="522" started-at="2024-02-21T11:58:47 IST" finished-at="2024-02-21T11:58:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@43e9089]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testsuites\\SELENIUM-1998\\SELENIUM-1998.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="main(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.steepgraph.ta.framework.App@5066d65f]" name="main" duration-ms="37343" started-at="2024-02-21T11:58:48 IST" finished-at="2024-02-21T11:59:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testsuites\\SELENIUM-1998\\SELENIUM-1998.xml]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testsuites\\SELENIUM-1998\\SELENIUM-1998.csv]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Optional parameter]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Suite: TestPlan, Test Case: SELENIUM-1998, Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.steepgraph.ta.framework.App@5066d65f]" name="afterTest" is-config="true" duration-ms="225" started-at="2024-02-21T11:59:25 IST" finished-at="2024-02-21T11:59:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@43e9089]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.steepgraph.ta.framework.App -->
+    </test> <!-- SELENIUM-1998 -->
+  </suite> <!-- TestPlan -->
+</testng-results>

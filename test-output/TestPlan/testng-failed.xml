@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestPlan]">
+  <test thread-count="5" name="SELENIUM-1445(failed)">
+    <parameter name="xmlFilePath" value="testsuites\\SELENIUM-1445\\SELENIUM-1445.xml"/>
+    <parameter name="csvFilePath" value="testsuites\\SELENIUM-1445\\SELENIUM-1445.csv"/>
+    <classes>
+      <class name="com.steepgraph.ta.framework.App">
+        <methods>
+          <include name="main" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.steepgraph.ta.framework.App -->
+    </classes>
+  </test> <!-- SELENIUM-1445(failed) -->
+</suite> <!-- Failed suite [TestPlan] -->

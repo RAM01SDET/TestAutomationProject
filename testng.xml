@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="xmlFilePath" value="D:\\Amit\\Projects\\Selenium\\Framework\\git\\P510_TestAutomationFrameWork_Selenium\\03_Source_Code\\Development\\TestAutomationProject\\src\\main\\resources\\TestCaseSample.xml"></parameter>
+		<parameter name="csvFilePath" value="D:\\Amit\\Projects\\Selenium\\Framework\\git\\P510_TestAutomationFrameWork_Selenium\\03_Source_Code\\Development\\TestAutomationProject\\src\\main\\resources\\TestData.csv"></parameter>
+		<classes>
+			<class name="com.steepgraph.ta.framework.App" />
+		</classes>
+	</test>
+</suite>

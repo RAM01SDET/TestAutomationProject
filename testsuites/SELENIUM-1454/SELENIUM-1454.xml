@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TestCase xmlns="https://www.steepgraph.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="https://www.steepgraph.com ../../../../resources/xsd/TestAutomationFramework.xsd">
+
+	<Login username="$csv{username}" password="$csv{password}"/>
+	<SwitchToDefaultContent />
+
+    <!-- ReadXML using deleteFile is false-->
+	<ReadXML unziplocation="C:\F1\" unzip="true" id="downloadedFile" fromBrowserDownloadLocation="true" regexExpr="true" downloadFileExt="zip" deleteFile="35354ss"/>
+    
+   <!--  Using different attribute ReadXML using deleteFile is true -->
+    <!--  <ReadXML unziplocation="C:\Users\SGSPC022\Downloads\" unzip="true" id="downloadedFile" fromBrowserDownloadLocation="true" regexExpr="true" downloadFileExt="zip" deleteFile="true"/>  -->
+
+	<Logout/>   
+    
+</TestCase>
+	

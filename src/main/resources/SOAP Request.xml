@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.sgs.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:add>
+         <ws:a>10</ws:a>
+         <ws:b>4</ws:b>
+      </ws:add>
+   </soapenv:Body>
+</soapenv:Envelope>

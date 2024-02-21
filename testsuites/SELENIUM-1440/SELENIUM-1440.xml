@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TestCase xmlns="https://www.steepgraph.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="https://www.steepgraph.com .././../resources/xsd/TestAutomationFramework.xsd">
+	
+<!--To verify ValidateBegin tag is working for mandatory attribute filepath  -->	
+
+
+	<Login username="$csv{username}" password="$csv{password}"/>	   
+	<ValidateBegin filePath="testsuites\\SELENIUM-1440\\BOM Status Report 1.xlsx"/> 	
+		<ValidateBehaviour data="KRD 901 084/11" col="0" row="1"/>
+	<ValidateEnd/>
+	<Logout/>
+	
+</TestCase>	
+	

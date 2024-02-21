@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestPlan">
+
+	<test name="SELENIUM-1998">
+		<parameter name="xmlFilePath" value="testsuites\\SELENIUM-1998\\SELENIUM-1998.xml"></parameter>
+		<parameter name="csvFilePath" value="testsuites\\SELENIUM-1998\\SELENIUM-1998.csv"></parameter>
+		<classes>
+			<class name="com.steepgraph.ta.framework.App" />
+		</classes>
+	</test>
+	
+	
+	<!-- <test name="SELENIUM-1823">
+		<parameter name="xmlFilePath" value="testsuites\\SELENIUM-1823\\SELENIUM-1823.xml"></parameter>
+		<parameter name="csvFilePath" value="testsuites\\SELENIUM-1823\\SELENIUM-1823.csv"></parameter>
+		<classes>
+			<class name="com.steepgraph.ta.framework.App" />
+		</classes>
+	</test> -->
+
+</suite>

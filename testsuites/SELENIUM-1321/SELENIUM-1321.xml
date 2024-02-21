@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TestCase xmlns="https://www.steepgraph.com"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://www.steepgraph.com ../../resources/xsd/TestAutomationFramework.xsd">
+
+	<Login password="$csv{password}" username="$csv{username}" />
+	
+	<SwitchToDefaultContent />	
+	<ClickGlobalActionsMenu commandLabel="Routes|Create Route" />	
+	<SwitchToWindow title="Create Route" />	
+	<!-- pass <AssertPageLoadTime id="createRoute" input="1000" condition="="/> -->	
+	
+	<!-- pass <AssertPageLoadTime id="createRoute" input="500" condition="!=" /> -->
+		
+	<!-- pass  <AssertPageLoadTime id="createRoute" input="1500" condition="&lt;" /> -->
+	
+	<!-- pass <AssertPageLoadTime id="createRoute" input="1499" condition="&lt;=" /> -->
+	
+	<!-- pass <AssertPageLoadTime id="createRoute" input="500" condition="&gt;" /> -->
+	
+	<!-- pass  <AssertPageLoadTime id="createRoute" input="1000" condition="&gt;=" /> -->
+	
+	<AssertPageLoadTime id="createRoute" input="1500" condition=">=" />
+	<CheckElement locatorType="id" locatorExpression="" criteria="visible"/>
+	
+	<!-- <CloseCurrentWindow/>
+	<SwitchToWindow/>
+	<Logout /> -->
+	
+</TestCase>
